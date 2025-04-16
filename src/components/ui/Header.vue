@@ -1,13 +1,18 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { useDark } from '@vueuse/core'
 
-// 🧾 Valores reativos
-const test = ref<string>('')
+const isDark = useDark()
+
+const toggleTheme = () => {
+  isDark.value = !isDark.value // Alterna entre os modos
+}
 </script>
 
 <template>
-  <div>
-    <img src="" alt="" />
+  <div class="container">
+    <img src="../../../public/favicon.svg" alt="Logo" />
+    <h1>Header</h1>
+    <button @click="toggleTheme">Tema</button>
   </div>
 </template>
 

@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
-
-// 🧾 Valores reativos
-const test = ref<string>('')
+import Header from '@/components/ui/Header.vue'
+import Footer from '@/components/ui/Footer.vue'
 </script>
 
 <template>
-  <div>
-    <h1>Componente Vue!👽</h1>
-  </div>
+  <Header />
+  <main>
+    <router-view />
+  </main>
+  <Footer />
 </template>
 
 <style scoped></style>
