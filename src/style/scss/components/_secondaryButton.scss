@@ -1,0 +1,13 @@
+@import '../abstracts/variables';
+
+@font-face {
+  font-family: AkiraExpanded;
+  src: url('../../../../public/assets/fonts/AkiraExpandedDemo.otf') format('opentype');
+}
+
+.--secondary-button {
+  color: $secondary-button-color-text;
+  font-family: AkiraExpanded;
+  padding: 16px 48px;
+  background-color: $secondary-button-color;
+}

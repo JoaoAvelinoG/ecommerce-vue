@@ -1,0 +1,18 @@
+@import '../abstracts/variables';
+
+@font-face {
+  font-family: AkiraExpanded;
+  src: url('../../../../public/assets/fonts/AkiraExpandedDemo.otf') format('opentype');
+}
+
+.--gradient-button {
+  color: $bg-black;
+  font-family: AkiraExpanded;
+  padding: 8px 24px;
+  background: $gradient;
+
+  &:hover {
+    background: linear-gradient(0deg, $accent-color -30%, $primary-color 100%);
+    transform: translateY(-3px);
+  }
+}

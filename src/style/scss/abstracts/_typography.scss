@@ -1,0 +1,70 @@
+@font-face {
+  font-family: AkiraExpanded;
+  src: url('../../../../public/assets/fonts/AkiraExpandedDemo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GoogleSansRegular;
+  src: url('../../../../public/assets/fonts/GoogleSansRegular.ttf') format('truetype');
+}
+
+$base-font-size: 16px;
+$line-height: 1.5;
+
+$container-width: 1440px;
+
+// Tamanhos de fontes
+$font-h1: 3rem; // Título Principal
+$font-h2: 2.5rem; // Subtítulo
+$font-h3: 2rem; // Subtítulo secundário
+$font-paragraph: 1rem; // Texto de parágrafo
+
+// Títulos principais (h1, h2, h3)
+h1,
+h2,
+h3 {
+  margin: 0 0 1rem 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: $font-h1;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: $font-h2;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: $font-h3;
+  line-height: 1.4;
+}
+
+// Parágrafo
+p {
+  font-family: GoogleSansRegular;
+  font-size: $font-paragraph;
+  line-height: $line-height;
+  margin-bottom: 1.5rem;
+}
+
+// Adicionando responsividade
+@media (max-width: $container-width) {
+  h1 {
+    font-size: responsive-font(3.5);
+  }
+
+  h2 {
+    font-size: responsive-font(2.5);
+  }
+
+  h3 {
+    font-size: responsive-font(2);
+  }
+
+  p {
+    font-size: responsive-font(1);
+  }
+}

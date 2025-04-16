@@ -1,0 +1,22 @@
+/* Personalização do Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px; /* Altura para rolagem horizontal */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: transparent; /* Fundo invisível */
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.5); /* Cinza escuro transparente */
+  border-radius: 4px; /* Bordas arredondadas */
+  transition: background 0.3s ease;
+}
+
+/* Efeito hover na barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.8); /* Fica mais visível ao passar o mouse */
+}
