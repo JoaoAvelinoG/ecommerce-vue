@@ -5,13 +5,16 @@
   color: $pure-white-color;
 
   button {
-    background-color: transparent;
-    color: $bg-black;
+    background: $gradient;
+    color: $pure-white-color;
 
     &:hover {
       background-color: $gradient;
       color: #fff;
     }
+  }
+  a {
+    color: $white-color;
   }
 }
 

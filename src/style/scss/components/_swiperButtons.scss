@@ -1,0 +1,11 @@
+@import '../abstracts/variables';
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+  color: $white-color !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $white-color !important;
+}
